@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      line-height: 1.6;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 0.5em;
+    }
+    fieldset {
+      margin-bottom: 1.5em;
+      padding: 1em;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, embedded media, and a fully-featured HTML5 form.</p>
+  </header>
+
+  <section>
+    <h2>lists</h2>
+    <h3>defination list</h3>
+     <dl>
+                <dt>USA</dt>
+                <dd>United States of America</dd>
+                <dt>UON</dt>
+                <dd>University of Nairobi</dd>
+            </dl>
+    <h3>Nested list</h3>
+    <p>This are lists inside a list</p><ol>
+                <li>Cars
+                    <ol type="i">
+                        <li> Mazda
+                            <ol type="a">
+                                <li>CX5</li>
+                                <li>Bolt</li>
+                            </ol>
+                        </li>
+                        <li>Isuzu</li>
+                        <li>Ford</li>
+                    </ol>
+                </li>
+                <li>Bikes
+                    <ul>
+                        <li>Honda</li>
+                        <li>Yamaha</li>
+                        <li>Suzuki</li>
+                    </ul>
+                </li>
+            </ol>
+
+  </section>
+
+  <section>
+    <h2>Sample Data Table</h2>
+    <table>
+      <caption>Top 3 Programming Languages</caption>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Language</th>
+          <th>Popularity (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>JavaScript</td>
+          <td>65.2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Python</td>
+          <td>48.5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Java</td>
+          <td>35.4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+
+    <h2>Embedded Media</h2>
+    <h3>Image</h3>
+     <img src="Art.png"alt " african art" width="400" height="200">
+
+    
+     <h3>Audio</h3>
+    <audio controls>
+      <source src=" Naïka - Deja Vu (Lyric Video) ( 128kbps ).mp3"/>
+      Your browser does not support the audio element.
+    </audio>
+     <h3>Video</h3>
+            <video width="500" height="300" controls>
+                <source src="Paratroopers_Static_Line_Jump_From_C-17(360p).mp4" type="video/mp4">
+                Your browser does not support video playback.
+    <h3>Video</h3>
+
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]{5,}" title="At least 5 alphanumeric characters" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" />
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="8" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="Kenya">Kenya</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Demo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
